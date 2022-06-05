@@ -10,3 +10,6 @@ function logAllPairsOfArray(array) {
 }
 
 logAllPairsOfArray(boxes);
+
+// When you see loops that are nested in become multiplication 
+// O(n^2) - Quadratic Time or horrible 😳
