@@ -4,6 +4,7 @@ const nemo = ['nemo'];
 const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'squirt', 'darla', 'hank'];
 const large = new Array(100000).fill('nemo');
 
+// For Loop
 const findNemo = (array) => {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === 'nemo') {
