@@ -25,7 +25,20 @@ const array2 = ['z', 'y', 'x'];
 // Better solution (more efficient)
 function checkArray(array1, array2) {
     // loop through the first array and create a object where properties === item in the array 
+    let map = {};
+    for (let i = 0; i < array1.length; i++) {
+        if (!map[array1[i]]) {
+            const item = array1[i];
+            map[item] = true;
+        }
+    }
     // loop through second array and check if item in sec ond array exists on created object
+    for (let j = o; j < array2.length; j++) {
+        if (map[array2[j]]) {
+            return true;
+        }
+    }
+    return false;
 }
 
 checkArray(array1, array2);
