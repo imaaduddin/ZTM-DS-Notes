@@ -23,7 +23,7 @@ const array2 = ['z', 'y', 'x'];
 // O(a*b)
 
 // Better solution (more efficient)
-function checkArray(array1, array2) {
+function checkArray2(array1, array2) {
     // loop through the first array and create a object where properties === item in the array 
     let map = {};
     for (let i = 0; i < array1.length; i++) {
@@ -41,4 +41,12 @@ function checkArray(array1, array2) {
     return false;
 }
 
-checkArray(array1, array2);
+checkArray2(array1, array2);
+
+
+// With fewer lines of code
+function checkArray3(array1, array2) {
+    return array1.some(item => array2.include(item));
+}
+
+checkArray3(array1, array2);
