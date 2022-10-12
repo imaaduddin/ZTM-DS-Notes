@@ -20,3 +20,8 @@ function containsCommonItem2(arr1, arr2) {
 }
 
 containsCommonItem2(array1, array2);
+
+// cleaner way of writing the above code:
+function containsCommonItem3 (arr1, arr2) {
+    return arr1.some(item => arr2.includes(item));
+}
