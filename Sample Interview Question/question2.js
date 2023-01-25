@@ -25,3 +25,5 @@ containsCommonItem2(array1, array2);
 function containsCommonItem3 (arr1, arr2) {
     return arr1.some(item => arr2.includes(item));
 }
+
+containsCommonItem3(array1, array2);
